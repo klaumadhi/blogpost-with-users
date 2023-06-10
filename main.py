@@ -20,6 +20,7 @@ app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap(app)
 server = app.server
+app.app_context().push()
 
 login_manager = LoginManager()
 login_manager.init_app(app)
